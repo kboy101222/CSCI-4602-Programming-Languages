@@ -4,9 +4,9 @@
   (if (empty? xs)
     xs
     (if (= (first xs) n)
-      (rest xs) ;; True
-      (cons (first xs) ;; False
-          (remove first n (rest xs))
+      (rest xs) ;; True Branch
+      (cons (first xs) ;; False Branch
+          (remove-first n (rest xs))
       )
     )
   )
